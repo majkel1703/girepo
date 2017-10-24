@@ -1,35 +1,51 @@
 #include <iostream>
 
-using namespace std;
-
-using namespace std;
+using namespace std ;
+void ile5 (int tab[], int ilosc)
+{
+    int i;
+    int licznik = 0;
+    for ( i = 0; i < ilosc; i++){
+    if (tab[i] % 5 == 0)
+    licznik++;
+}
+}
 
 void pobierzliczby(int tab[], int ile){
-    int i = 0;
-    for (i = 0; i < ile; i++) {
-        cout << "Podaj liczbe: ";
-        cin >> tab[i];
-    }
+    int i =0;
+    for (i=0;i<ile;i++){
+            cout<<"podaj liczbę: ";
+            cin>>tab[i];}
 }
-void sumuj (int liczby[], int ilosc) {
-    int i;
-    int suma = 0;
-    for (i = 0; i < ilosc; i++) {
-        suma+= liczby[i];
+void sumuj (int tab[], int ile){
+    int i=0;
+    int suma=0;
+    for (i=0;i<ile;i++){
+        suma+=tab[i];
     }
-    
-    cout << "suma liczb: " << suma <<endl;
-    
+    cout<<"suma liczb: "<<suma<<endl;
+}
+void najmniejsza(int tab[], int ile){
+	int mini=tab[0];
+	for(int i = 0; i < mini;i++){
+	if(mini >tab[i])
+		mini=tab[i];
+	}
+	cout<<"najmniejsza iczba : "<<mini<<endl;
     }
-    int main(int argc, char **argv)
+
+
+int main(int argc, char **argv)
 {
-    int rozmiar = 0;
-    cout << " ile liczb podasz: ";
-    cin >> rozmiar;
-    int liczby[rozmiar];
-    
-    pobierzliczby(liczby, rozmiar);
-    
-    sumuj(liczby, rozmiar);
-	return 0;
+    int rozmiar=0;
+    cout<< "ile liczb podasz???";
+    cin>>rozmiar;
+    int liczby [rozmiar];
+
+
+    pobierzliczby(liczby,rozmiar);
+    sumuj(liczby,rozmiar);
+    najmniejsza(liczby, rozmiar);
+    ile5 (liczby, rozmiar);
+    return 0;
 }
