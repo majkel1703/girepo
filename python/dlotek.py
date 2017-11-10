@@ -4,30 +4,42 @@
 import random
 
 def losuj(ileliczb, maksliczb):
-    liczby = []
+
+    typy = set()  # pusta lista
+
+    ile = 0  # ilość unikalnych liczb
+
+    # for i in range(ileliczb):
+    while ile < ileliczb:
+        liczba = (random.randint(0, maksliczb))
+        if liczby.count(liczba) == 0:
+            liczby.append(liczba)
+            ile += 1
+
+    #print(typy)
+    return tpypy
+
 
 def main(args):
-    ileliczb = int(input("ile liczb zgadywać?"))
-    maksliczb = int(input("maksymalna losowa liczba: "))+
+    ileliczb = int(input("Ile liczb chcesz zgadywać? "))
+    maksliczb = int(input("Maksymalna losowana liczba: "))
 
+    liczby = losuj(ileliczb, maksliczb)
+    typy = typy(ileliczb)
 
-    liczby = []
+    # pobieranie typów użytkownika
 
-    ile = 0
-
-    while ile < ileliczb
-        liczba = random.randint(0, maksliczb)
-        if liczby.count(liczba) == 0;
-            liczby,append(liczba)
-         ile =+ 1
-    print (ileliczb, maksliczb)
+    typy = set()  # pusty zbiór
 
     for i in range(ileliczb):
-        random. randint(0, maksliczb)
+        typ = input("podaj typ: ")
+        typy.add(typ)
+
+    print(typy)
 
     return 0
 
 
 if __name__ == '__main__':
     import sys
-    sys.exit(main(sys.argv))
+sys.exit(main(sys.argv))
