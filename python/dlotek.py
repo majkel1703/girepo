@@ -17,7 +17,15 @@ def losuj(ileliczb, maksliczb):
             ile += 1
 
     #print(typy)
-    return tpypy
+    return liczby
+    def pobierz_typy(ileliczb):
+        typy = set()
+        ile = 0
+           while ile < ileliczb:
+        typ = int(input("podaj typy: "))
+        if typ not in typy:
+            typy. add(typ)
+            ile += 1
 
 
 def main(args):
@@ -25,11 +33,12 @@ def main(args):
     maksliczb = int(input("Maksymalna losowana liczba: "))
 
     liczby = losuj(ileliczb, maksliczb)
-    typy = typy(ileliczb)
+    typy = pobierz_typy(ileliczb)
 
     # pobieranie typów użytkownika
 
-    typy = set()  # pusty zbiór
+    trafione = set(liczby) & tpypy
+    print("trafiłeś "len(trafione)
 
     for i in range(ileliczb):
         typ = input("podaj typ: ")
