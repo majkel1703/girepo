@@ -1,1 +1,1 @@
-repozytorium praca na lecjach informatyki
+Moje repozytorium
