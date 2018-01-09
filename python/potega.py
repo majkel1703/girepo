@@ -3,6 +3,7 @@
 #
 #  potega.py
 
+
 def potega_it(x, n):
 
     i = 1
@@ -32,6 +33,7 @@ def main(args):
 
     print('Wynik: ', potega_it(x, n))
     return 0
+
 
 if __name__ == '__main__':
     import sys
